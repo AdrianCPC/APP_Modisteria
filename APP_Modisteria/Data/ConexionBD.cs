@@ -15,6 +15,10 @@ namespace APP_Modisteria.Data
         private string strCadenaCnx;
         private SqlConnection objCnnBD;
         private SqlCommand objCmdBD;
+        public SqlCommand CmdBD
+        {
+            get { return objCmdBD; }
+        }
         private SqlDataReader objReader;
         private SqlDataAdapter dapGenerico; //Intermediario para llenar el dataset
         private DataSet dts;
